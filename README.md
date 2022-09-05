@@ -2,7 +2,7 @@
 แนะนำการใช้ ESP-IDF โปรแกรมไฟกระพริบวิบวับ
 
 ## ขั้นตอน
-1. เปิดโปรแกรม Espressif IDE โดยการดับเบอ้ลคลิกที่ไอคอน โปรแกรมจะแสดง splash screen ดังภาพ
+1. เปิดโปรแกรม Espressif IDE โดยการดับเบิ้ลคลิกที่ไอคอน โปรแกรมจะแสดง splash screen ดังภาพ
 
 <p align="center">
 <img  src="Images/ESP-IDF-Splash-screen.png" alt="ESP-IDF-Splash-screen" style="width:500px;" >
