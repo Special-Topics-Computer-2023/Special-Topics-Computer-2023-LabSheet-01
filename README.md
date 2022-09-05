@@ -77,4 +77,25 @@ void app_main(void)
 }
 ```
 
+9. กำหนดบอร์ดพัฒนาที่ใช้ (ขั้นตอนนี้้จะทำเพียงครั้งแรก ที่เริ่ม workspace ใหม่หรือเปลี่ยนบอร์ดที่ใช้ในการทดลอง)
+(1) คลิกที่ dropdown ของ  combobox `on:` 
+(2) เลือกบอร์ดเป้าหมาย (ในชุดทดลองนี้เป็น esp32)
 
+<p align="center">
+<img  src="Images/SelectTargetESP32.png" alt="SelectTargetESP32" style="width:500px;" >
+</p>
+
+
+
+10.  Build โปรเจค ถ้ามีข้อผิดพลาดให้แก้ไขให้เรียบร้อย
+(1) คลิกที่ปุ่ม  `Build` (ดังตำแหน่งในรูปด้านล่าง) 
+(2) สังเกตุรายงานจาก IDE 
+   
+<p align="center">
+<img  src="Images/buildProject.png" alt="buildProject" style="width:500px;" >
+</p>
+
+
+
+## การดาวน์โหลด Firmware ลงสู่บอร์ดทดลอง
+คลิกที่นี่ 
