@@ -100,6 +100,33 @@ void app_main(void)
 </p>
 
 
+11. หากไม่มีสิ่งใดผิดพลาด (ทั้งการติดตั้งและ source code) โปรแกรม IDE จะสร้างโปรเจกต์จนเสร็จเรียบร้อยและรายงานขนาดสุดท้ายของ binary ที่จะเขียนลงใน microcontroller 
+
+<p align="center">
+<img  src="Images/buildComplete.png" alt="buildComplete" style="width:500px;" >
+</p>
+
+__ตัวอย่างรายงาน__
+
+*รายละเอียดจะอธิบายเพิ่มเติมในโอกาสถัดไป*  
+
+```
+Used static DRAM:   11352 bytes ( 169384 remain, 6.3% used)
+      .data size:    9064 bytes
+      .bss  size:    2288 bytes
+Used static IRAM:   45762 bytes (  85310 remain, 34.9% used)
+      .text size:   44735 bytes
+      .vectors size:    1027 bytes
+Used Flash size :  124071 bytes
+      .text     :   89139 bytes
+      .rodata   :   34676 bytes
+Total image size:  178897 bytes (.bin may be padded larger)
+
+C:\Espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v4.4.2/\components\partition_table\gen_esp32part.py D:\GitHubRepos\__ENGEDU\LAB\Lab-01-LED-Blinky\build\partition_table\partition-table.bin
+Total time taken to build the project: 163,765 ms
+```
+
+
 
 ## การดาวน์โหลด Firmware ลงสู่บอร์ดทดลอง
 คลิกที่นี่ 
