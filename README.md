@@ -4,9 +4,9 @@
 ## ขั้นตอน
 1. เปิดโปรแกรม Eapressif IDE
 
-
-![alt](Images/ESP-IDF-Splash-screen.png)
-
 <p align="center">
-<img  src="Pictures/" alt="Setup 04" style="width:500px;" >
+<img  src="Images/ESP-IDF-Splash-screen.png" alt="ESP-IDF-Splash-screen.png" style="width:500px;" >
 </p>
+
+
+
