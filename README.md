@@ -9,7 +9,7 @@
 </p>
 
 
-2. โปรแกรม Espressif IDE จะถามที่ตั้งของ Project (เรียกว่า Workspace) __ซึ่งต้องไม่มี spacebar ในชื่อของ folder__ (ถ้ามี spacebar จะไม่สามารถสร้าง project ได้) 
+2. โปรแกรม Espressif IDE จะถามที่ตั้งของ Project (เรียกว่า Workspace) ให่ browse ไปยังที่จะสร้าง workspace อาจจะใช้ folder ที่มีอยู่แล้วหรือสร้างใหม่ก็ได้  __ซึ่งต้องไม่มี spacebar ในชื่อของ folder__ (ถ้ามี spacebar จะไม่สามารถสร้าง project ได้)
 
 <p align="center">
 <img  src="Images/SelectWorkspaceDirectory.png" alt="SelectWorkspaceDirectory" style="width:500px;" >
@@ -35,14 +35,14 @@
 <img  src="Images/CreateaNewESPIDFProject.png" alt="CreateaNewESPIDFProject" style="width:500px;" >
 </p>
 
-6. สร้างโปรเจค IDF โดยการกำหนด Project name ระวังอย่าให้ชื่อ project มี spacebar ถ้าต้องการแยกคำให้ใช้เครื่องหมายขีด (`-`) หรือ underscore (`_`)  เช่น `Lab-01-LED-Blinky`  หรือ `Lab-01-LED-Blinky`
+6. สร้างโปรเจค IDF โดยการกำหนด Project name ระวังอย่าให้ชื่อ project มี spacebar ถ้าต้องการแยกคำให้ใช้เครื่องหมายขีด (`-`) หรือ underscore (`_`)  เช่น `Lab-01-LED-Blinky`  หรือ `Lab-01-LED-Blinky` เสร็จแล้วกด `Finish` (ถ้ากดปุ่ม  `Next` จะสามารถเลือกโปรแกรมจากตัวอย่างได้)
 
 <p align="center">
 <img  src="Images/newProject.png" alt="newProject" style="width:500px;" >
 </p>
 
 
-7. โปรแกรมพัฒนา (IDE) จะพามาที่หน้าโปรเจค ให้คลิกที่เครื่องหมาย `>` จนกระทั่งเจอไฟล์ `main.c` ให้ดับเบิ้ลคลิกเพื่อเปิดไฟล์ `main.c` จะเห็นโปรแกรมเบื้องต้นที่ IDE สร้างให้มา  
+7. โปรแกรมพัฒนา (IDE) จะพามาที่หน้าโปรเจค ใน Project Explorer  ให้คลิกที่เครื่องหมาย `>` ที่หน้าชื่อโปรเจคและโฟลเดอร์ย่อยในนั้น จนกระทั่งเจอไฟล์ `main.c` ให้ดับเบิ้ลคลิกเพื่อเปิดไฟล์ `main.c` จะเห็นโปรแกรมเบื้องต้นที่ IDE สร้างให้มา  
 
 <p align="center">
 <img  src="Images/main-c.png" alt="newProject" style="width:500px;" >
