@@ -90,6 +90,6 @@ Done
 
 ```
 Writing at 0x00010000... (16 %)
- Writing at 0x0001bc95... (33 %)
- Writing ...   
+Writing at 0x0001bc95... (33 %)
+Writing ...   
 ```
