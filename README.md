@@ -60,12 +60,12 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <unistd.h>
-#include "driver/gpio.h"  // เพื่อการใช้งาน digital output (GPIO)
+#include "driver/gpio.h"                        // เพื่อการใช้งาน digital output (GPIO)
 
 void app_main(void)
 {
-    gpio_reset_pin(22);  // รีเซ็ตสถานะของขาหมายเลข 22 
-    gpio_set_direction(22, GPIO_MODE_OUTPUT); // กำหนดให้ขาหมายเลข 22 เป็น digital output
+    gpio_reset_pin(22);                         // รีเซ็ตสถานะของขาหมายเลข 22 
+    gpio_set_direction(22, GPIO_MODE_OUTPUT);   // กำหนดให้ขาหมายเลข 22 เป็น digital output
 
     while (true)                // while (true) = วนรอบไม่มีที่สิ้นสุด
     {
