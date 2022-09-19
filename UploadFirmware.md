@@ -4,7 +4,7 @@
 
 
  <p align="center">
-<img  src="Images/GPIOJumperToLED.png" alt="GPIOJumperToLED" style="width:500px;" >
+<img  src="Images/GPIOJumperToLED.png" alt="GPIOJumperToLED" style="width:640px;" >
 </p>
 
 
@@ -15,7 +15,7 @@
  
 
  <p align="center">
-<img  src="Images/CommPort.png" alt="CommPort" style="width:500px;" >
+<img  src="Images/CommPort.png" alt="CommPort" style="width:640px;" >
 </p>
 
 4. กลับมาที่โปรแกรม ESP32 IDE  ให้เลือก Comm port โดยคลิกที่รูปเฟืองใน combobox `on:` 
@@ -25,7 +25,7 @@
 (2) เลือก Communication port ที่ต่อกับบอร์ดทดลอง แล้วกด `Finish`
 
  <p align="center">
-<img  src="Images/SelectCommPort.png" alt="SelectCommPort" style="width:500px;" >
+<img  src="Images/SelectCommPort.png" alt="SelectCommPort" style="width:640px;" >
 </p>
 
 5. Upload firmware เข้าสู่บอร์ดทดลอง 
@@ -36,7 +36,7 @@
 
 
  <p align="center">
-<img  src="Images/LaunchInRUNMode.png" alt="LaunchInRUNMode" style="width:500px;" >
+<img  src="Images/LaunchInRUNMode.png" alt="LaunchInRUNMode" style="width:640px;" >
 </p>
 
 ถ้าโปรแกรมได้สำเร็จ จะมีข้อความดังตัวอย่างต่อไปนี้

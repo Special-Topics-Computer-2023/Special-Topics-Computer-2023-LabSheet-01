@@ -5,54 +5,54 @@
 1. เปิดโปรแกรม Espressif IDE โดยการดับเบิ้ลคลิกที่ไอคอน โปรแกรมจะแสดง splash screen ดังภาพ
 
 <p align="center">
-<img  src="Images/ESP-IDF-Splash-screen.png" alt="ESP-IDF-Splash-screen" style="width:500px;" >
+<img  src="Images/ESP-IDF-Splash-screen.png" alt="ESP-IDF-Splash-screen" style="width:640px;" >
 </p>
 
 
 2. โปรแกรม Espressif IDE จะถามที่ตั้งของ Project (เรียกว่า Workspace) ให่ browse ไปยังที่จะสร้าง workspace อาจจะใช้ folder ที่มีอยู่แล้วหรือสร้างใหม่ก็ได้  __ซึ่งต้องไม่มี spacebar ในชื่อของ folder__ (ถ้ามี spacebar จะไม่สามารถสร้าง project ได้)
 
 <p align="center">
-<img  src="Images/SelectWorkspaceDirectory.png" alt="SelectWorkspaceDirectory" style="width:500px;" >
+<img  src="Images/SelectWorkspaceDirectory.png" alt="SelectWorkspaceDirectory" style="width:640px;" >
 </p>
 
 3. โปรแกรม Espressif IDE จะแสดงหน้าจอ Welcome
 
 <p align="center">
-<img  src="Images/esprerssif-welcome.png" alt="esprerssif-welcome" style="width:500px;" >
+<img  src="Images/esprerssif-welcome.png" alt="esprerssif-welcome" style="width:640px;" >
 </p>
 
 
 4. ให้ปิดหน้าต่าง Welcome แล้วโปรแกรม Espressif IDE จะแสดง Project Explorer ขึ้นมา
 
 <p align="center">
-<img  src="Images/WorkspaceCloseWelcome.png" alt="WorkspaceCloseWelcome" style="width:500px;" >
+<img  src="Images/WorkspaceCloseWelcome.png" alt="WorkspaceCloseWelcome" style="width:640px;" >
 </p>
 
 5. สร้างโปรเจคใหม่ โดยการคลิกที่ `Create a new EspressIF IDF project`
 
 
 <p align="center">
-<img  src="Images/CreateaNewESPIDFProject.png" alt="CreateaNewESPIDFProject" style="width:500px;" >
+<img  src="Images/CreateaNewESPIDFProject.png" alt="CreateaNewESPIDFProject" style="width:640px;" >
 </p>
 
 6. สร้างโปรเจค IDF โดยการกำหนด Project name ระวังอย่าให้ชื่อ project มี spacebar ถ้าต้องการแยกคำให้ใช้เครื่องหมายขีด (`-`) หรือ underscore (`_`)  เช่น `Lab-01-LED-Blinky`  หรือ `Lab-01-LED-Blinky` เสร็จแล้วกด `Finish` (ถ้ากดปุ่ม  `Next` จะสามารถเลือกโปรแกรมจากตัวอย่างได้)
 
 <p align="center">
-<img  src="Images/newProject.png" alt="newProject" style="width:500px;" >
+<img  src="Images/newProject.png" alt="newProject" style="width:640px;" >
 </p>
 
 
 7. โปรแกรมพัฒนา (IDE) จะพามาที่หน้าโปรเจค ใน Project Explorer  ให้คลิกที่เครื่องหมาย `>` ที่หน้าชื่อโปรเจคและโฟลเดอร์ย่อยในนั้น จนกระทั่งเจอไฟล์ `main.c` ให้ดับเบิ้ลคลิกเพื่อเปิดไฟล์ `main.c` จะเห็นโปรแกรมเบื้องต้นที่ IDE สร้างให้มา  
 
 <p align="center">
-<img  src="Images/main-c.png" alt="newProject" style="width:500px;" >
+<img  src="Images/main-c.png" alt="newProject" style="width:640px;" >
 </p>
 
 
 8. แก้ไขไฟล์ `main.c` ให่มีหน้าตาดังภาพด้านล่างนี้  
 
 <p align="center">
-<img  src="Images/edit-main-c.png" alt="edit-main-c" style="width:500px;" >
+<img  src="Images/edit-main-c.png" alt="edit-main-c" style="width:640px;" >
 </p>
 
 ### Source code ของไฟล์ main.c ในตัวอย่างโปรแกรมไฟกระพริบ
@@ -84,7 +84,7 @@ void app_main(void)
 (2) เลือกบอร์ดเป้าหมาย (ในชุดทดลองนี้เป็น esp32)
 
 <p align="center">
-<img  src="Images/SelectTargetESP32.png" alt="SelectTargetESP32" style="width:500px;" >
+<img  src="Images/SelectTargetESP32.png" alt="SelectTargetESP32" style="width:640px;" >
 </p>
 
 
@@ -96,14 +96,14 @@ void app_main(void)
 (2) สังเกตุรายงานจาก IDE 
    
 <p align="center">
-<img  src="Images/buildProject.png" alt="buildProject" style="width:500px;" >
+<img  src="Images/buildProject.png" alt="buildProject" style="width:640px;" >
 </p>
 
 
 11. หากไม่มีสิ่งใดผิดพลาด (ทั้งการติดตั้งและ source code) โปรแกรม IDE จะสร้างโปรเจกต์จนเสร็จเรียบร้อยและรายงานขนาดสุดท้ายของ binary ที่จะเขียนลงใน microcontroller 
 
 <p align="center">
-<img  src="Images/buildComplete.png" alt="buildComplete" style="width:500px;" >
+<img  src="Images/buildComplete.png" alt="buildComplete" style="width:640px;" >
 </p>
 
 __ตัวอย่างรายงาน__
