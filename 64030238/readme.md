@@ -1,4 +1,4 @@
-![image](https://github.com/JASDA0000/Special-Topics-Computer-2023-LabSheet-01/assets/103983336/2e4a4927-7987-408e-b3b4-bfa567b614a6)# 64030238 Jasda Sighapooti
+# 64030238 Jasda Sighapooti
 เมืออัพโหลดโปรแกรมไฟกระพริบลงบอร์ดและเชื่อมต่อ pin 22 เข้ากับ LED แล้วที่บอร์ดจะมีไฟกระพริบ ติด - ดับ สลับกันและ terminal
 ```
 ets Jul 29 2019 12:21:46
