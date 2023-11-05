@@ -1,4 +1,11 @@
 บอร์ดจะมีไฟกระพริบติด - ดับ
-![image](https://github.com/Pipaul1601/Special-Topics-Computer-2023-LabSheet-01/assets/115067018/82ddadd1-70e8-47c9-9010-88385472d38e)
-![image](https://github.com/Pipaul1601/Special-Topics-Computer-2023-LabSheet-01/assets/115067018/d0818efd-b926-48f2-a746-db5dc35d12f7)
+![image](https://github.com/Pipaul1601/Special-Topics-Computer-2023-LabSheet-01/assets/115067018/51f9af0f-3e6c-4d10-b33a-a3b204243d26)
+
+
+
+
+
+![image](https://github.com/Pipaul1601/Special-Topics-Computer-2023-LabSheet-01/assets/115067018/c02e008b-6225-405c-a436-4b06bb212988)
+
+
 
