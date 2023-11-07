@@ -66,6 +66,6 @@ I (319) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldo
 
 ## Video การทำงาน
 
-
+<video src="721073848.110496.mp4" controls title="Title"></video>
 
 
