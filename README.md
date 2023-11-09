@@ -127,6 +127,8 @@ C:\Espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe C:/Espressif/framewo
 Total time taken to build the project: 163,765 ms
 ```
 
+## การ build code -ลอง build
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/e33e0443-230f-42df-b469-f3e4815b7268)
 
 
 ## การ Upload Firmware  สู่บอร์ดทดลอง
