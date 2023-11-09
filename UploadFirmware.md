@@ -93,3 +93,10 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+## ผลการทดลอง
+ไฟติด 1 วินาที
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/4e1790f6-cc91-4d97-a742-7fe46c4d72c2)
+
+ไฟดับ 1 วินาที สลับกัน
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/55f554fa-61dc-4de6-9e17-38239c0f1a76)
+
