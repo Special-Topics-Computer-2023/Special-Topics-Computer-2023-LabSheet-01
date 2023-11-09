@@ -93,3 +93,10 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+
+
+
+https://github.com/Fixckpx/Special-Topics-Computer-2023-LabSheet-01/assets/115066186/0371bb09-8df7-4fd5-9718-6732134259a4
+
+
+
