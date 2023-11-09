@@ -1,3 +1,5 @@
+Repo:https://github.com/CHAIYAPRUK/LabSheet-01
+
 # LabSheet-01 (การ upload firmware)
 
 1. จากตัวอย่างโปรแกรม จะเห็นว่าเราใช้ GPIO หมายเลข 22  ดังนั้น ที่บนบอร์ด ให้ต่อสาย  jump จากขาที่เขียน GPIO22 ไปยัง LED ดวงหนึ่งที่อยู่บนบอร์ด (สมมติเป็น LED หมายเลข 8)
