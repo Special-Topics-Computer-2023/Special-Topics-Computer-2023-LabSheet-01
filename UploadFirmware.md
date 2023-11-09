@@ -100,3 +100,5 @@ Writing ...
 ไฟดับ 1 วินาที สลับกัน
 ![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/55f554fa-61dc-4de6-9e17-38239c0f1a76)
 
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/23c6e2ec-e74d-47e5-9ff4-9d6f06abfe68)
+
