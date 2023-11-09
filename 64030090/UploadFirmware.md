@@ -93,3 +93,6 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+
+![image](https://github.com/Nanapon2002/Special-Topics-Computer-2023-LabSheet-01/assets/115066356/0bfcc999-b06f-4d8d-97d1-ac4c26fddc9d)
+
