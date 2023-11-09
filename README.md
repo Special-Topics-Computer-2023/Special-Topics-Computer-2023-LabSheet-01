@@ -128,7 +128,7 @@ Total time taken to build the project: 163,765 ms
 ```
 
 ## การ build code - ลอง build (64030048)
-![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/e33e0443-230f-42df-b469-f3e4815b7268)
+![ภาพ](https://github.com/kammam19/Special-Topics-Computer-2023-LabSheet-01/assets/112167732/88a6fbfa-9863-4317-b30e-27c0a3e7fae5)
 
 
 ## การ Upload Firmware  สู่บอร์ดทดลอง
