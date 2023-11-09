@@ -93,3 +93,4 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+![S__92446747](https://github.com/Suthera213/Special-Topics-Computer-2023-LabSheet-01/assets/115066359/4cb1e56d-36ef-4628-b292-65a236d28c4f)
