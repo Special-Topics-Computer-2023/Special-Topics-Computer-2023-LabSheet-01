@@ -65,7 +65,8 @@ I (319) gpio: GPIO[22]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldo
 ```
 
 ## Video การทำงาน
+![721318617 049597](https://github.com/DanupatSangseekaew/Special-Topics-Computer-2023-LabSheet-01/assets/100436724/a4d85480-a889-482d-aaf4-d6ccc5298512)
 
-<video src="721073848.110496.mp4" controls title="Title"></video>
+
 
 
