@@ -1,132 +1,78 @@
-# LabSheet-01
-แนะนำการใช้ ESP-IDF โปรแกรมไฟกระพริบวิบวับ
+## เมื่ออัปโหลดโปรแกรมไฟกระพริบลงบอร์ดและเชื่อมต่อ PIN22เข้ากับ LED แล้วบอร์ดก็จะมีไฟกระพริบ ติด-ดับ สลับกัน
 
-## ขั้นตอน
-1. เปิดโปรแกรม Espressif IDE โดยการดับเบิ้ลคลิกที่ไอคอน โปรแกรมจะแสดง splash screen ดังภาพ
+Connecting..............
 
-<p align="center">
-<img  src="Images/ESP-IDF-Splash-screen.png" alt="ESP-IDF-Splash-screen" style="width:640px;" >
-</p>
+Chip is ESP32-D0WD-V3 (revision v3.0)
 
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
 
-2. โปรแกรม Espressif IDE จะถามที่ตั้งของ Project (เรียกว่า Workspace) ให่ browse ไปยังที่จะสร้าง workspace อาจจะใช้ folder ที่มีอยู่แล้วหรือสร้างใหม่ก็ได้  __ซึ่งต้องไม่มี spacebar ในชื่อของ folder__ (ถ้ามี spacebar จะไม่สามารถสร้าง project ได้)
+Crystal is 40MHz
 
-<p align="center">
-<img  src="Images/SelectWorkspaceDirectory.png" alt="SelectWorkspaceDirectory" style="width:640px;" >
-</p>
+MAC: 94:b5:55:f8:5d:50
 
-3. โปรแกรม Espressif IDE จะแสดงหน้าจอ Welcome
+Uploading stub...
 
-<p align="center">
-<img  src="Images/esprerssif-welcome.png" alt="esprerssif-welcome" style="width:640px;" >
-</p>
+Running stub...
 
+Stub running...
 
-4. ให้ปิดหน้าต่าง Welcome แล้วโปรแกรม Espressif IDE จะแสดง Project Explorer ขึ้นมา
+Changing baud rate to 460800
 
-<p align="center">
-<img  src="Images/WorkspaceCloseWelcome.png" alt="WorkspaceCloseWelcome" style="width:640px;" >
-</p>
+Changed.
 
-5. สร้างโปรเจคใหม่ โดยการคลิกที่ `Create a new EspressIF IDF project`
+Configuring flash size...
 
+Flash will be erased from 0x00001000 to 0x00007fff...
 
-<p align="center">
-<img  src="Images/CreateaNewESPIDFProject.png" alt="CreateaNewESPIDFProject" style="width:640px;" >
-</p>
+Flash will be erased from 0x00010000 to 0x0003dfff...
 
-6. สร้างโปรเจค IDF โดยการกำหนด Project name ระวังอย่าให้ชื่อ project มี spacebar ถ้าต้องการแยกคำให้ใช้เครื่องหมายขีด (`-`) หรือ underscore (`_`)  เช่น `Lab-01-LED-Blinky`  หรือ `Lab-01-LED-Blinky` เสร็จแล้วกด `Finish` (ถ้ากดปุ่ม  `Next` จะสามารถเลือกโปรแกรมจากตัวอย่างได้)
+Flash will be erased from 0x00008000 to 0x00008fff...
 
-<p align="center">
-<img  src="Images/newProject.png" alt="newProject" style="width:640px;" >
-</p>
+Compressed 26384 bytes to 16453...
 
+Writing at 0x00001000... (50 %)
 
-7. โปรแกรมพัฒนา (IDE) จะพามาที่หน้าโปรเจค ใน Project Explorer  ให้คลิกที่เครื่องหมาย `>` ที่หน้าชื่อโปรเจคและโฟลเดอร์ย่อยในนั้น จนกระทั่งเจอไฟล์ `main.c` ให้ดับเบิ้ลคลิกเพื่อเปิดไฟล์ `main.c` จะเห็นโปรแกรมเบื้องต้นที่ IDE สร้างให้มา  
+Writing at 0x000076ad... (100 %)
 
-<p align="center">
-<img  src="Images/main-c.png" alt="newProject" style="width:640px;" >
-</p>
+Wrote 26384 bytes (16453 compressed) at 0x00001000 in 0.8 seconds (effective 258.9 kbit/s)...
 
+Hash of data verified.
 
-8. แก้ไขไฟล์ `main.c` ให่มีหน้าตาดังภาพด้านล่างนี้  
+Compressed 186064 bytes to 97425...
 
-<p align="center">
-<img  src="Images/edit-main-c.png" alt="edit-main-c" style="width:640px;" >
-</p>
+Writing at 0x00010000... (16 %)
 
-### Source code ของไฟล์ main.c ในตัวอย่างโปรแกรมไฟกระพริบ
-``` C
-#include <stdio.h>
-#include <stdbool.h>
-#include <unistd.h>
-#include "driver/gpio.h"                        // เพื่อการใช้งาน digital output (GPIO)
+Writing at 0x0001c024... (33 %)
 
-void app_main(void)
-{
-    gpio_reset_pin(22);                         // รีเซ็ตสถานะของขาหมายเลข 22 
-    gpio_set_direction(22, GPIO_MODE_OUTPUT);   // กำหนดให้ขาหมายเลข 22 เป็น digital output
+Writing at 0x000218fc... (50 %)
 
-    while (true)                                // while (true) = วนรอบไม่มีที่สิ้นสุด
-    {
-        gpio_set_level(22, 1);                  // สั่งให้ LED ติด
-        sleep(1);                               // หน่วงเวลา 1 วินาที
-        gpio_set_level(22, 0);                  // สั่งให้ LED ดับ
-        sleep(1);                               // หน่วงเวลา 1 วินาที
-    }
-}
-```
+Writing at 0x000274d6... (66 %)
 
-9. กำหนดบอร์ดพัฒนาที่ใช้ (ขั้นตอนนี้้จะทำเพียงครั้งแรก ที่เริ่ม workspace ใหม่หรือเปลี่ยนบอร์ดที่ใช้ในการทดลอง)
-    
-(1) คลิกที่ dropdown ของ  combobox `on:` 
+Writing at 0x0002ffa3... (83 %)
 
-(2) เลือกบอร์ดเป้าหมาย (ในชุดทดลองนี้เป็น esp32)
+Writing at 0x00037c9b... (100 %)
 
-<p align="center">
-<img  src="Images/SelectTargetESP32.png" alt="SelectTargetESP32" style="width:640px;" >
-</p>
+Wrote 186064 bytes (97425 compressed) at 0x00010000 in 3.0 seconds (effective 503.0 kbit/s)...
+
+Hash of data verified.
+
+Compressed 3072 bytes to 103...
+
+Writing at 0x00008000... (100 %)
+
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 240.8 kbit/s)...
+
+Hash of data verified.
 
 
+Leaving...
 
-10.   Build โปรเจค ถ้ามีข้อผิดพลาดให้แก้ไขให้เรียบร้อย
+Hard resetting via RTS pin...
 
-(1) คลิกที่ปุ่ม  `Build` (ดังตำแหน่งในรูปด้านล่าง) 
+Done
 
-(2) สังเกตุรายงานจาก IDE 
-   
-<p align="center">
-<img  src="Images/buildProject.png" alt="buildProject" style="width:640px;" >
-</p>
+## รูปไฟดับ
+![image](https://github.com/64030301nam/Special-Topics-Computer-2023-LabSheet-01/assets/115066329/58b638eb-daee-46a4-b519-e355fbeef492)
 
-
-11. หากไม่มีสิ่งใดผิดพลาด (ทั้งการติดตั้งและ source code) โปรแกรม IDE จะสร้างโปรเจกต์จนเสร็จเรียบร้อยและรายงานขนาดสุดท้ายของ binary ที่จะเขียนลงใน microcontroller 
-
-<p align="center">
-<img  src="Images/buildComplete.png" alt="buildComplete" style="width:640px;" >
-</p>
-
-__ตัวอย่างรายงาน__
-
-*รายละเอียดจะอธิบายเพิ่มเติมในโอกาสถัดไป*  
-
-```
-Used static DRAM:   11352 bytes ( 169384 remain, 6.3% used)
-      .data size:    9064 bytes
-      .bss  size:    2288 bytes
-Used static IRAM:   45762 bytes (  85310 remain, 34.9% used)
-      .text size:   44735 bytes
-      .vectors size:    1027 bytes
-Used Flash size :  124071 bytes
-      .text     :   89139 bytes
-      .rodata   :   34676 bytes
-Total image size:  178897 bytes (.bin may be padded larger)
-
-C:\Espressif\python_env\idf4.4_py3.8_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v4.4.2/\components\partition_table\gen_esp32part.py D:\GitHubRepos\__ENGEDU\LAB\Lab-01-LED-Blinky\build\partition_table\partition-table.bin
-Total time taken to build the project: 163,765 ms
-```
-
-
-
-## การ Upload Firmware  สู่บอร์ดทดลอง
-คลิกที่นี่  [การ upload Firmware สู่บอร์ดทดลอง](UploadFirmware.md)
+## รูปไฟติด
+![image](https://github.com/64030301nam/Special-Topics-Computer-2023-LabSheet-01/assets/115066329/e37bcef0-9776-4b56-ab70-61a730722783)
