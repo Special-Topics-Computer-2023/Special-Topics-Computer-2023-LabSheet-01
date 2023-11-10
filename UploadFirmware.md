@@ -93,3 +93,7 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+![image](https://github.com/TikPoramat2545/Special-Topics-Computer-2023-LabSheet-01/assets/134470274/06d4a54c-7070-40d7-a115-a819d5c63da3)
+
+![image](https://github.com/TikPoramat2545/Special-Topics-Computer-2023-LabSheet-01/assets/134470274/34a4382b-c5c5-4f00-b3e3-1f5daf40db01)
+
