@@ -93,3 +93,60 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+## ผลลัพธ์ ##
+```
+[1/5] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v4.4.3\workspace\Lab-01-LED-Blinkky\build\esp-idf\esptool_py && python D:/Espressif/frameworks/esp-idf-v4.4.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Espressif/frameworks/esp-idf-v4.4.3/workspace/Lab-01-LED-Blinkky/build/partition_table/partition-table.bin D:/Espressif/frameworks/esp-idf-v4.4.3/workspace/Lab-01-LED-Blinkky/build/Lab-01-LED-Blinkky.bin"
+Lab-01-LED-Blinkky.bin binary size 0x2bde0 bytes. Smallest app partition is 0x100000 bytes. 0xd4220 bytes (83%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v4.4.3\workspace\Lab-01-LED-Blinkky\build\bootloader\esp-idf\esptool_py && python D:/Espressif/frameworks/esp-idf-v4.4.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/Espressif/frameworks/esp-idf-v4.4.3/workspace/Lab-01-LED-Blinkky/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6330 bytes. 0xcd0 bytes (11%) free.
+[2/3] cmd.exe /C "cd /D D:\Espressif\frameworks\esp-idf-v4.4.3\components\esptool_py && D:\Espressif\tools\cmake\3.23.1\bin\cmake.exe -D IDF_PATH="D:/Espressif/frameworks/esp-idf-v4.4.3" -D SERIAL_TOOL="python D:/Espressif/frameworks/esp-idf-v4.4.3/components/esptool_py/esptool/esptool.py --chip esp32" -D SERIAL_TOOL_ARGS="--before=default_reset --after=hard_reset write_flash @flash_args" -D WORKING_DIRECTORY="D:/Espressif/frameworks/esp-idf-v4.4.3/workspace/Lab-01-LED-Blinkky/build" -P D:/Espressif/frameworks/esp-idf-v4.4.3/components/esptool_py/run_serial_tool.cmake"
+esptool.py esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 Lab-01-LED-Blinkky.bin 0x8000 partition_table/partition-table.bin
+esptool.py v3.3.2
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision 3)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b5:55:f3:54:48
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 25392 bytes to 15891...
+Writing at 0x00001000... (100 %)
+Wrote 25392 bytes (15891 compressed) at 0x00001000 in 0.8 seconds (effective 265.2 kbit/s)...
+Hash of data verified.
+Compressed 179680 bytes to 93495...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001bcd1... (33 %)
+Writing at 0x00021502... (50 %)
+Writing at 0x000271d8... (66 %)
+Writing at 0x0002f818... (83 %)
+Writing at 0x0003798c... (100 %)
+Wrote 179680 bytes (93495 compressed) at 0x00010000 in 2.6 seconds (effective 555.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 419.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+Executing action: flash
+Running ninja in directory d:\espressif\frameworks\esp-idf-v4.4.3\workspace\lab-01-led-blinkky\build
+Executing "ninja flash"...
+Done
+
+```
+## video การทดลอง ##
+
+![401581458_6600151000082349_4126741717060201089_n](https://github.com/TanapatPluemchai/Special-Topics-Computer-2023-LabSheet-01/assets/115067806/718f9aeb-89b3-4821-9f34-62e2ad12d0e9)
+
+
+
