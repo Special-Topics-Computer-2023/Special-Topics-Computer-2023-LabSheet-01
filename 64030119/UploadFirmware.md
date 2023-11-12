@@ -93,3 +93,7 @@ Writing at 0x00010000... (16 %)
 Writing at 0x0001bc95... (33 %)
 Writing ...   
 ```
+![image](https://github.com/PiyatidaPh/Special-Topics-Computer-2023-LabSheet-01/assets/115066285/76811bdc-8f3b-47ed-bde0-64ac186e78ac)
+
+![image](https://github.com/PiyatidaPh/Special-Topics-Computer-2023-LabSheet-01/assets/115066285/4418a766-57b5-4c37-be2c-15ed36a6ff84)
+
